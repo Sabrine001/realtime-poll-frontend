@@ -1,42 +1,53 @@
-# Recipe Frontend with Vue 3
+# Real-Time Poll Frontend (Vue 3)
 
-This application allows users to create and maintain recipes. Please visit https://github.com/OC-ComputerScience/recipe-backend for the backend repository.
+This is the frontend for a real-time polling web application built with Vue 3 and Vite. It allows hosts to create live polls and participants to vote in real time, with results updating instantly on the screen.
 
-## Project Setup
+This was developed as a group project for a software engineering course. My main contributions were on the frontend: building Vue components, handling API integration, and working on UI/UX details.
 
-1. Clone the project into your **XAMPP/xamppfiles/htdocs/recipeapp** directory.
+## Tech Stack
 
-```
-git clone https://github.com/OC-ComputerScience/recipe-frontend.git
-```
+- Vue 3 (Composition API)
+- JavaScript
+- Vite
+- HTML5, CSS3
+- Axios (or Fetch) for API calls
 
-2. Install the project.
+## Features
 
-```
+- Create and join live polls
+- Real-time vote updates
+- Results view for hosts and participants
+- Responsive layout for desktop and mobile
+
+## Accessibility (WCAG)
+
+I worked with the following accessibility practices in mind:
+
+- Semantic HTML landmarks (`<main>`, `<header>`, `<nav>`, etc.) where appropriate
+- Proper `<button>` and `<a>` usage for interactive elements
+- Form inputs associated with `<label>` elements
+- Text alternatives (`alt` attributes) for meaningful images/icons
+- Keyboard-friendly interactions for core flows (navigating, voting)
+- Attention to color contrast and readable typography aimed at WCAG 2.1 AA
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (LTS version recommended)
+- npm or yarn
+
+### Install and Run
+
+```bash
+# clone the repo
+git clone https://github.com/Sabrine001/realtime-poll-frontend.git
+cd realtime-poll-frontend
+
+# install dependencies
 npm install
-```
 
-3. Make sure **Apache** is running.
-
-   - We recommend using XAMPP to serve this project.
-   - In XAMPP, make sure that **Apache** is running.
-
-4. Compile and run the project locally.
-
-```
+# run dev server
 npm run dev
-```
 
-5. Open http://localhost:8081 in a browser to view the project running.
 
-6. (Optional) Compile the project for production.
-
-```
-npm run build
-```
-
-7. (Optional) Lint and fix the project files.
-
-```
-npm run lint
-```
